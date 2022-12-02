@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/LaundryNinjas/static/css/main.073c9b0a.css",
+    "main.js": "/LaundryNinjas/static/js/main.903bb2ac.js",
+    "static/js/787.c6797960.chunk.js": "/LaundryNinjas/static/js/787.c6797960.chunk.js",
+    "static/media/logo.svg": "/LaundryNinjas/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/LaundryNinjas/index.html",
+    "main.073c9b0a.css.map": "/LaundryNinjas/static/css/main.073c9b0a.css.map",
+    "main.903bb2ac.js.map": "/LaundryNinjas/static/js/main.903bb2ac.js.map",
+    "787.c6797960.chunk.js.map": "/LaundryNinjas/static/js/787.c6797960.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.903bb2ac.js"
+  ]
+}
