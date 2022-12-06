@@ -1,285 +1,57 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 888;
-exports.ids = [888];
+exports.id = "pages/_app";
+exports.ids = ["pages/_app"];
 exports.modules = {
 
-/***/ 710:
+/***/ "./public/logo.svg":
+/*!*************************!*\
+  !*** ./public/logo.svg ***!
+  \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ MyApp)
-});
-
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(997);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(689);
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-;// CONCATENATED MODULE: external "prop-types"
-const external_prop_types_namespaceObject = require("prop-types");
-var external_prop_types_default = /*#__PURE__*/__webpack_require__.n(external_prop_types_namespaceObject);
-// EXTERNAL MODULE: ./src/styles/index.css
-var styles = __webpack_require__(729);
-;// CONCATENATED MODULE: external "next/head"
-const head_namespaceObject = require("next/head");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
-// EXTERNAL MODULE: external "@material-ui/core/styles"
-var styles_ = __webpack_require__(308);
-;// CONCATENATED MODULE: external "@material-ui/core/CssBaseline"
-const CssBaseline_namespaceObject = require("@material-ui/core/CssBaseline");
-var CssBaseline_default = /*#__PURE__*/__webpack_require__.n(CssBaseline_namespaceObject);
-// EXTERNAL MODULE: ./src/styles/theme.js
-var theme = __webpack_require__(720);
-// EXTERNAL MODULE: external "@material-ui/core"
-var core_ = __webpack_require__(130);
-;// CONCATENATED MODULE: ./src/components/Topbar/styles.js
-
-
-const useStyles = (0,core_.makeStyles)(()=>({
-        root: {
-            position: "relative",
-            backgroundColor: theme/* default.palette.surface.white */.Z.palette.surface.white,
-            width: "100%",
-            height: 200,
-            zIndex: 999,
-            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
-        },
-        title: {
-            height: 50,
-            color: theme/* default.palette.surface.black */.Z.palette.surface.black,
-            fontSize: theme/* default.typography.h2.fontSize */.Z.typography.h2.fontSize,
-            fontWeight: 600
-        },
-        sub: {
-            color: theme/* default.palette.surface.black */.Z.palette.surface.black,
-            fontSize: theme/* default.typography.h6.fontSize */.Z.typography.h6.fontSize,
-            fontWeight: 600,
-            textAlign: "center"
-        },
-        shell: {
-            marginLeft: theme/* default.spacing */.Z.spacing(2),
-            width: 180,
-            height: 45,
-            "& > *": {
-                marginTop: 0,
-                transition: "0.2s"
-            },
-            "&:hover": {
-                "& > *": {
-                    backgroundColor: theme/* default.palette.surface.grey */.Z.palette.surface.grey,
-                    marginTop: -10
-                }
-            }
-        },
-        button: {
-            backgroundColor: theme/* default.palette.surface.black */.Z.palette.surface.black,
-            color: theme/* default.palette.surface.white */.Z.palette.surface.white,
-            fontSize: theme/* default.typography.h5.fontSize */.Z.typography.h5.fontSize,
-            textTransform: "none",
-            borderRadius: 8,
-            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.25)",
-            width: "100%",
-            height: "100%"
-        }
-    }));
-/* harmony default export */ const Topbar_styles = (useStyles);
-
-;// CONCATENATED MODULE: ./src/components/Topbar/index.jsx
-
-
-
-
-function Topbar() {
-    const s = Topbar_styles();
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Box, {
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-around",
-        className: s.root,
-        children: [
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Box, {
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Typography, {
-                        className: s.title,
-                        children: "Laundry Ninjas LLC"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Typography, {
-                        className: s.sub,
-                        children: "Family owned and operated"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Box, {
-                display: "flex",
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                        href: "/How",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Box, {
-                            className: s.shell,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
-                                className: s.button,
-                                children: "How it Works"
-                            })
-                        })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Box, {
-                        className: s.shell,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
-                            className: s.button,
-                            children: "Login"
-                        })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Box, {
-                        className: s.shell,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
-                            className: s.button,
-                            children: "New? Sign up"
-                        })
-                    })
-                ]
-            })
-        ]
-    });
-}
-
-;// CONCATENATED MODULE: ./src/pages/_app.jsx
-// // import logo from "../../public/logo.svg";
-// // import "./App.css";
-// // function App() {
-// //   return (
-// //     <div className="App">
-// //       <header className="App-header">
-// //         <img src={logo} className="App-logo" alt="logo" />
-// //         <p>
-// //           Edit <code>src/App.js</code> and save to reload.
-// //         </p>
-// //         <a
-// //           className="App-link"
-// //           href="https://reactjs.org"
-// //           target="_blank"
-// //           rel="noopener noreferrer"
-// //         >
-// //           Learn React
-// //         </a>
-// //       </header>
-// //     </div>
-// //   );
-// // }
-// // export default App;
-/* HERE ---------------------------------------------------------------------*/ 
-
-
-
-
-
-
-
-
-// import How from "./How";
-// import Home from "./index";
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-function MyApp(props) {
-    const { Component , pageProps  } = props;
-    external_react_default().useEffect(()=>{
-        const jssStyles = document.querySelector("#jss-server-side");
-        if (jssStyles) {
-            jssStyles.parentElement.removeChild(jssStyles);
-        }
-    }, []);
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-        children: [
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("title", {
-                        children: "Laundry Ninjas"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        name: "viewport",
-                        content: "minimum-scale=1, initial-scale=1, width=device-width"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(styles_.ThemeProvider, {
-                theme: theme/* default */.Z,
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx((CssBaseline_default()), {}),
-                    /*#__PURE__*/ jsx_runtime_.jsx(Topbar, {}),
-                    /*#__PURE__*/ jsx_runtime_.jsx(Component, {
-                        ...pageProps
-                    })
-                ]
-            })
-        ]
-    });
-}
-MyApp.propTypes = {
-    Component: (external_prop_types_default()).elementType.isRequired,
-    pageProps: (external_prop_types_default()).object.isRequired
-}; /* HERE ---------------------------------------------------------------------*/  // import ReactDOM from "react-dom/client";
- // import { BrowserRouter, Routes, Route } from "react-router-dom";
- // import Home from "./index";
- // export default function App() {
- //   return (
- //     <BrowserRouter>
- //       <Routes>
- //         <Route path="/" element={<Home />}>
- //           {/* <Route index element={<Home />} />
- //           <Route path="blogs" element={<Blogs />} />
- //           <Route path="contact" element={<Contact />} />
- //           <Route path="*" element={<NoPage />} /> */}
- //         </Route>
- //       </Routes>
- //     </BrowserRouter>
- //   );
- // }
- // const root = ReactDOM.createRoot(document.getElementById('root'));
- // root.render(<App />);
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"src\":\"/_next/static/media/logo.7f01b434.svg\",\"height\":595,\"width\":842});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wdWJsaWMvbG9nby5zdmcuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLENBQUMsdUVBQXVFIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbGF1bmRyeW5pbmphcy8uL3B1YmxpYy9sb2dvLnN2Zz83YjU1Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcInNyY1wiOlwiL19uZXh0L3N0YXRpYy9tZWRpYS9sb2dvLjdmMDFiNDM0LnN2Z1wiLFwiaGVpZ2h0XCI6NTk1LFwid2lkdGhcIjo4NDJ9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./public/logo.svg\n");
 
 /***/ }),
 
-/***/ 729:
+/***/ "./src/pages/_app.jsx":
+/*!****************************!*\
+  !*** ./src/pages/_app.jsx ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _public_logo_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../public/logo.svg */ \"./public/logo.svg\");\n/* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/index.css */ \"./src/styles/index.css\");\n/* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_index_css__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nfunction App() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"App\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"header\", {\n            className: \"App-header\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                    src: _public_logo_svg__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n                    className: \"App-logo\",\n                    alt: \"logo\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\Dan\\\\Desktop\\\\React Projects\\\\LaundryNinjas\\\\src\\\\pages\\\\_app.jsx\",\n                    lineNumber: 8,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                    children: [\n                        \"Edit \",\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"code\", {\n                            children: \"src/App.js\"\n                        }, void 0, false, {\n                            fileName: \"C:\\\\Users\\\\Dan\\\\Desktop\\\\React Projects\\\\LaundryNinjas\\\\src\\\\pages\\\\_app.jsx\",\n                            lineNumber: 10,\n                            columnNumber: 16\n                        }, this),\n                        \" and save to reload.\"\n                    ]\n                }, void 0, true, {\n                    fileName: \"C:\\\\Users\\\\Dan\\\\Desktop\\\\React Projects\\\\LaundryNinjas\\\\src\\\\pages\\\\_app.jsx\",\n                    lineNumber: 9,\n                    columnNumber: 9\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                    className: \"App-link\",\n                    href: \"https://reactjs.org\",\n                    target: \"_blank\",\n                    rel: \"noopener noreferrer\",\n                    children: \"Learn React\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\Dan\\\\Desktop\\\\React Projects\\\\LaundryNinjas\\\\src\\\\pages\\\\_app.jsx\",\n                    lineNumber: 12,\n                    columnNumber: 9\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"C:\\\\Users\\\\Dan\\\\Desktop\\\\React Projects\\\\LaundryNinjas\\\\src\\\\pages\\\\_app.jsx\",\n            lineNumber: 7,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\Dan\\\\Desktop\\\\React Projects\\\\LaundryNinjas\\\\src\\\\pages\\\\_app.jsx\",\n        lineNumber: 6,\n        columnNumber: 5\n    }, this);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App); /* HERE ---------------------------------------------------------------------*/  // import React from \"react\";\n // import PropTypes from \"prop-types\";\n // import \"../styles/index.css\";\n // import Head from \"next/head\";\n // import { ThemeProvider } from \"@material-ui/core/styles\";\n // import CssBaseline from \"@material-ui/core/CssBaseline\";\n // import theme from \"../styles/theme\";\n // import Topbar from \"../components/Topbar\";\n // export default function MyApp(props) {\n //   const { Component, pageProps } = props;\n //   React.useEffect(() => {\n //     const jssStyles = document.querySelector(\"#jss-server-side\");\n //     if (jssStyles) {\n //       jssStyles.parentElement.removeChild(jssStyles);\n //     }\n //   }, []);\n //   return (\n //     <>\n //       <Head>\n //         <title>Laundry Ninjas</title>\n //         <meta\n //           name=\"viewport\"\n //           content=\"minimum-scale=1, initial-scale=1, width=device-width\"\n //         />\n //       </Head>\n //       <ThemeProvider theme={theme}>\n //         <CssBaseline />\n //         <Topbar />\n //         <Component {...pageProps} />\n //       </ThemeProvider>\n //     </>\n //   );\n // }\n // MyApp.propTypes = {\n //   Component: PropTypes.elementType.isRequired,\n //   pageProps: PropTypes.object.isRequired,\n // };\n /* HERE ---------------------------------------------------------------------*/  // import ReactDOM from \"react-dom/client\";\n // import { BrowserRouter, Routes, Route } from \"react-router-dom\";\n // import Home from \"./index\";\n // export default function App() {\n //   return (\n //     <BrowserRouter>\n //       <Routes>\n //         <Route path=\"/\" element={<Home />}>\n //           {/* <Route index element={<Home />} />\n //           <Route path=\"blogs\" element={<Blogs />} />\n //           <Route path=\"contact\" element={<Contact />} />\n //           <Route path=\"*\" element={<NoPage />} /> */}\n //         </Route>\n //       </Routes>\n //     </BrowserRouter>\n //   );\n // }\n // const root = ReactDOM.createRoot(document.getElementById('root'));\n // root.render(<App />);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvX2FwcC5qc3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7QUFBeUM7QUFDWjtBQUU3QixTQUFTQyxNQUFNO0lBQ2IscUJBQ0UsOERBQUNDO1FBQUlDLFdBQVU7a0JBQ2IsNEVBQUNDO1lBQU9ELFdBQVU7OzhCQUNoQiw4REFBQ0U7b0JBQUlDLEtBQUtOLHdEQUFJQTtvQkFBRUcsV0FBVTtvQkFBV0ksS0FBSTs7Ozs7OzhCQUN6Qyw4REFBQ0M7O3dCQUFFO3NDQUNJLDhEQUFDQztzQ0FBSzs7Ozs7O3dCQUFpQjs7Ozs7Ozs4QkFFOUIsOERBQUNDO29CQUNDUCxXQUFVO29CQUNWUSxNQUFLO29CQUNMQyxRQUFPO29CQUNQQyxLQUFJOzhCQUNMOzs7Ozs7Ozs7Ozs7Ozs7OztBQU1UO0FBRUEsaUVBQWVaLEdBQUdBLEVBQUMsQ0FFbkIsNkVBQTZFLElBRTdFLDZCQUE2QjtDQUM3QixzQ0FBc0M7Q0FDdEMsZ0NBQWdDO0NBQ2hDLGdDQUFnQztDQUNoQyw0REFBNEQ7Q0FDNUQsMkRBQTJEO0NBQzNELHVDQUF1QztDQUN2Qyw2Q0FBNkM7Q0FFN0MseUNBQXlDO0NBQ3pDLDRDQUE0QztDQUU1Qyw0QkFBNEI7Q0FDNUIsb0VBQW9FO0NBQ3BFLHVCQUF1QjtDQUN2Qix3REFBd0Q7Q0FDeEQsUUFBUTtDQUNSLFlBQVk7Q0FFWixhQUFhO0NBQ2IsU0FBUztDQUNULGVBQWU7Q0FDZix3Q0FBd0M7Q0FDeEMsZ0JBQWdCO0NBQ2hCLDRCQUE0QjtDQUM1QiwyRUFBMkU7Q0FDM0UsYUFBYTtDQUNiLGdCQUFnQjtDQUNoQixzQ0FBc0M7Q0FDdEMsMEJBQTBCO0NBQzFCLHFCQUFxQjtDQUNyQix1Q0FBdUM7Q0FDdkMseUJBQXlCO0NBQ3pCLFVBQVU7Q0FDVixPQUFPO0NBQ1AsSUFBSTtDQUVKLHNCQUFzQjtDQUN0QixpREFBaUQ7Q0FDakQsNENBQTRDO0NBQzVDLEtBQUs7Q0FFTCw2RUFBNkUsSUFFN0UsMkNBQTJDO0NBQzNDLG1FQUFtRTtDQUNuRSw4QkFBOEI7Q0FFOUIsa0NBQWtDO0NBQ2xDLGFBQWE7Q0FDYixzQkFBc0I7Q0FDdEIsaUJBQWlCO0NBQ2pCLDhDQUE4QztDQUM5QyxtREFBbUQ7Q0FDbkQsdURBQXVEO0NBQ3ZELDJEQUEyRDtDQUMzRCx3REFBd0Q7Q0FDeEQsbUJBQW1CO0NBQ25CLGtCQUFrQjtDQUNsQix1QkFBdUI7Q0FDdkIsT0FBTztDQUNQLElBQUk7Q0FFSixxRUFBcUU7Q0FDckUsd0JBQXdCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbGF1bmRyeW5pbmphcy8uL3NyYy9wYWdlcy9fYXBwLmpzeD80Yzc3Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBsb2dvIGZyb20gXCIuLi8uLi9wdWJsaWMvbG9nby5zdmdcIjtcclxuaW1wb3J0IFwiLi4vc3R5bGVzL2luZGV4LmNzc1wiO1xyXG5cclxuZnVuY3Rpb24gQXBwKCkge1xyXG4gIHJldHVybiAoXHJcbiAgICA8ZGl2IGNsYXNzTmFtZT1cIkFwcFwiPlxyXG4gICAgICA8aGVhZGVyIGNsYXNzTmFtZT1cIkFwcC1oZWFkZXJcIj5cclxuICAgICAgICA8aW1nIHNyYz17bG9nb30gY2xhc3NOYW1lPVwiQXBwLWxvZ29cIiBhbHQ9XCJsb2dvXCIgLz5cclxuICAgICAgICA8cD5cclxuICAgICAgICAgIEVkaXQgPGNvZGU+c3JjL0FwcC5qczwvY29kZT4gYW5kIHNhdmUgdG8gcmVsb2FkLlxyXG4gICAgICAgIDwvcD5cclxuICAgICAgICA8YVxyXG4gICAgICAgICAgY2xhc3NOYW1lPVwiQXBwLWxpbmtcIlxyXG4gICAgICAgICAgaHJlZj1cImh0dHBzOi8vcmVhY3Rqcy5vcmdcIlxyXG4gICAgICAgICAgdGFyZ2V0PVwiX2JsYW5rXCJcclxuICAgICAgICAgIHJlbD1cIm5vb3BlbmVyIG5vcmVmZXJyZXJcIlxyXG4gICAgICAgID5cclxuICAgICAgICAgIExlYXJuIFJlYWN0XHJcbiAgICAgICAgPC9hPlxyXG4gICAgICA8L2hlYWRlcj5cclxuICAgIDwvZGl2PlxyXG4gICk7XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IEFwcDtcclxuXHJcbi8qIEhFUkUgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKi9cclxuXHJcbi8vIGltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuLy8gaW1wb3J0IFByb3BUeXBlcyBmcm9tIFwicHJvcC10eXBlc1wiO1xyXG4vLyBpbXBvcnQgXCIuLi9zdHlsZXMvaW5kZXguY3NzXCI7XHJcbi8vIGltcG9ydCBIZWFkIGZyb20gXCJuZXh0L2hlYWRcIjtcclxuLy8gaW1wb3J0IHsgVGhlbWVQcm92aWRlciB9IGZyb20gXCJAbWF0ZXJpYWwtdWkvY29yZS9zdHlsZXNcIjtcclxuLy8gaW1wb3J0IENzc0Jhc2VsaW5lIGZyb20gXCJAbWF0ZXJpYWwtdWkvY29yZS9Dc3NCYXNlbGluZVwiO1xyXG4vLyBpbXBvcnQgdGhlbWUgZnJvbSBcIi4uL3N0eWxlcy90aGVtZVwiO1xyXG4vLyBpbXBvcnQgVG9wYmFyIGZyb20gXCIuLi9jb21wb25lbnRzL1RvcGJhclwiO1xyXG5cclxuLy8gZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTXlBcHAocHJvcHMpIHtcclxuLy8gICBjb25zdCB7IENvbXBvbmVudCwgcGFnZVByb3BzIH0gPSBwcm9wcztcclxuXHJcbi8vICAgUmVhY3QudXNlRWZmZWN0KCgpID0+IHtcclxuLy8gICAgIGNvbnN0IGpzc1N0eWxlcyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIjanNzLXNlcnZlci1zaWRlXCIpO1xyXG4vLyAgICAgaWYgKGpzc1N0eWxlcykge1xyXG4vLyAgICAgICBqc3NTdHlsZXMucGFyZW50RWxlbWVudC5yZW1vdmVDaGlsZChqc3NTdHlsZXMpO1xyXG4vLyAgICAgfVxyXG4vLyAgIH0sIFtdKTtcclxuXHJcbi8vICAgcmV0dXJuIChcclxuLy8gICAgIDw+XHJcbi8vICAgICAgIDxIZWFkPlxyXG4vLyAgICAgICAgIDx0aXRsZT5MYXVuZHJ5IE5pbmphczwvdGl0bGU+XHJcbi8vICAgICAgICAgPG1ldGFcclxuLy8gICAgICAgICAgIG5hbWU9XCJ2aWV3cG9ydFwiXHJcbi8vICAgICAgICAgICBjb250ZW50PVwibWluaW11bS1zY2FsZT0xLCBpbml0aWFsLXNjYWxlPTEsIHdpZHRoPWRldmljZS13aWR0aFwiXHJcbi8vICAgICAgICAgLz5cclxuLy8gICAgICAgPC9IZWFkPlxyXG4vLyAgICAgICA8VGhlbWVQcm92aWRlciB0aGVtZT17dGhlbWV9PlxyXG4vLyAgICAgICAgIDxDc3NCYXNlbGluZSAvPlxyXG4vLyAgICAgICAgIDxUb3BiYXIgLz5cclxuLy8gICAgICAgICA8Q29tcG9uZW50IHsuLi5wYWdlUHJvcHN9IC8+XHJcbi8vICAgICAgIDwvVGhlbWVQcm92aWRlcj5cclxuLy8gICAgIDwvPlxyXG4vLyAgICk7XHJcbi8vIH1cclxuXHJcbi8vIE15QXBwLnByb3BUeXBlcyA9IHtcclxuLy8gICBDb21wb25lbnQ6IFByb3BUeXBlcy5lbGVtZW50VHlwZS5pc1JlcXVpcmVkLFxyXG4vLyAgIHBhZ2VQcm9wczogUHJvcFR5cGVzLm9iamVjdC5pc1JlcXVpcmVkLFxyXG4vLyB9O1xyXG5cclxuLyogSEVSRSAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xyXG5cclxuLy8gaW1wb3J0IFJlYWN0RE9NIGZyb20gXCJyZWFjdC1kb20vY2xpZW50XCI7XHJcbi8vIGltcG9ydCB7IEJyb3dzZXJSb3V0ZXIsIFJvdXRlcywgUm91dGUgfSBmcm9tIFwicmVhY3Qtcm91dGVyLWRvbVwiO1xyXG4vLyBpbXBvcnQgSG9tZSBmcm9tIFwiLi9pbmRleFwiO1xyXG5cclxuLy8gZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQXBwKCkge1xyXG4vLyAgIHJldHVybiAoXHJcbi8vICAgICA8QnJvd3NlclJvdXRlcj5cclxuLy8gICAgICAgPFJvdXRlcz5cclxuLy8gICAgICAgICA8Um91dGUgcGF0aD1cIi9cIiBlbGVtZW50PXs8SG9tZSAvPn0+XHJcbi8vICAgICAgICAgICB7LyogPFJvdXRlIGluZGV4IGVsZW1lbnQ9ezxIb21lIC8+fSAvPlxyXG4vLyAgICAgICAgICAgPFJvdXRlIHBhdGg9XCJibG9nc1wiIGVsZW1lbnQ9ezxCbG9ncyAvPn0gLz5cclxuLy8gICAgICAgICAgIDxSb3V0ZSBwYXRoPVwiY29udGFjdFwiIGVsZW1lbnQ9ezxDb250YWN0IC8+fSAvPlxyXG4vLyAgICAgICAgICAgPFJvdXRlIHBhdGg9XCIqXCIgZWxlbWVudD17PE5vUGFnZSAvPn0gLz4gKi99XHJcbi8vICAgICAgICAgPC9Sb3V0ZT5cclxuLy8gICAgICAgPC9Sb3V0ZXM+XHJcbi8vICAgICA8L0Jyb3dzZXJSb3V0ZXI+XHJcbi8vICAgKTtcclxuLy8gfVxyXG5cclxuLy8gY29uc3Qgcm9vdCA9IFJlYWN0RE9NLmNyZWF0ZVJvb3QoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKSk7XHJcbi8vIHJvb3QucmVuZGVyKDxBcHAgLz4pO1xyXG4iXSwibmFtZXMiOlsibG9nbyIsIkFwcCIsImRpdiIsImNsYXNzTmFtZSIsImhlYWRlciIsImltZyIsInNyYyIsImFsdCIsInAiLCJjb2RlIiwiYSIsImhyZWYiLCJ0YXJnZXQiLCJyZWwiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/pages/_app.jsx\n");
+
+/***/ }),
+
+/***/ "./src/styles/index.css":
+/*!******************************!*\
+  !*** ./src/styles/index.css ***!
+  \******************************/
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ 130:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("@material-ui/core");
-
-/***/ }),
-
-/***/ 308:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("@material-ui/core/styles");
-
-/***/ }),
-
-/***/ 689:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("react");
-
-/***/ }),
-
-/***/ 997:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("react/jsx-runtime");
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ })
 
@@ -290,7 +62,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [720], () => (__webpack_exec__(710)));
+var __webpack_exports__ = (__webpack_exec__("./src/pages/_app.jsx"));
 module.exports = __webpack_exports__;
 
 })();
