@@ -10,8 +10,8 @@ const theme = createTheme({
     },
     surface: {
       white: "#FFFFFF",
-      black: "#2A2A2A",
-      grey: "#4F4F4F",
+      black: "#000000",
+      grey: "#2A2A2A",
       success: "#63B662",
       error: "#EC4B4B",
     },
