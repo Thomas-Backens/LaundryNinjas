@@ -17,9 +17,11 @@ export default function Topbar() {
         <Typography className={s.sub}>Family owned and operated</Typography>
       </Box>
       <Box display="flex">
-        <Box className={s.shell}>
-          <Button className={s.button}>How it Works</Button>
-        </Box>
+        <a href="/How">
+          <Box className={s.shell}>
+            <Button className={s.button}>How it Works</Button>
+          </Box>
+        </a>
         <Box className={s.shell}>
           <Button className={s.button}>Login</Button>
         </Box>
