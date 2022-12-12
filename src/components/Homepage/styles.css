@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Homenaje&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+#top {
+  margin-bottom: 200px;
+}
+
+h6 {
+  font-family: "Inter";
+  color: #4a4644;
+  font-weight: 500;
+  font-size: 20px;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.contentBtn {
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  background-color: white;
+  color: #8d8682;
+  border: 2px solid #8d8682;
+  border-radius: 2px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  font-family: "Homenaje";
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.contentBtn:hover {
+  border-radius: 16px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+.contentBtn:active {
+  background-color: #8d8682;
+  color: white;
+}
+
+.section {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+.section img,
+.section .info {
+  width: 575px;
+  height: 300px;
+  text-align: left;
+}
+.section img {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.info h6 {
+  height: 10px;
+}
+.info p {
+  font-family: "Inter";
+  font-size: 20px;
+  color: #8d8682;
+  height: 80px;
+  line-height: 34px;
+}

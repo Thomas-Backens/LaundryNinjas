@@ -1,13 +1,10 @@
 import React from "react";
-import { Box, Typography } from "@material-ui/core";
-import useStyles from "./styles";
+import "./styles.css";
 
 export default function HowItWorks() {
-  const s = useStyles();
-
   return (
-    <Box>
-      <Typography className={s.title}>How it Works</Typography>
-    </Box>
+    <div>
+      <p className="title">How it Works</p>
+    </div>
   );
 }
