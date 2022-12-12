@@ -1,32 +1,24 @@
 import React from "react";
-import { Box, Typography, Button } from "@material-ui/core";
-import useStyles from "./styles";
+import "./styles.css";
 
 export default function Topbar() {
-  const s = useStyles();
-
   return (
-    <Box
-      display="flex"
-      alignItems="center"
-      justifyContent="space-around"
-      className={s.root}
-    >
-      <Box>
-        <Typography className={s.title}>Laundry Ninjas LLC</Typography>
-        <Typography className={s.sub}>Family owned and operated</Typography>
-      </Box>
-      <Box display="flex">
-        <Box className={s.shell}>
-          <Button className={s.button}>How it Works</Button>
-        </Box>
-        <Box className={s.shell}>
-          <Button className={s.button}>Login</Button>
-        </Box>
-        <Box className={s.shell}>
-          <Button className={s.button}>New? Sign up</Button>
-        </Box>
-      </Box>
-    </Box>
+    <div className="root">
+      <div className="name">
+        <h1 id="title">Laundry Ninjas LLC</h1>
+        <h4 id="sub">Family owned and operated</h4>
+      </div>
+      <div className="buttons">
+        <div className="shell">
+          <button className="button">How it Works</button>
+        </div>
+        <div className="shell">
+          <button className="button">Login</button>
+        </div>
+        <div className="shell">
+          <button className="button">New? Sign up</button>
+        </div>
+      </div>
+    </div>
   );
 }
