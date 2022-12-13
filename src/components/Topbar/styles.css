@@ -30,10 +30,15 @@
   display: flex;
 }
 .shell {
-  margin-left: 16px; /* theme.spacing(2); */
+  margin-left: 16px;
   width: 180px;
   height: 45px;
   cursor: pointer;
+}
+.empty {
+  margin-left: 16px;
+  width: 180px;
+  height: 45px;
 }
 .shell:hover > .button {
   background-color: #2a2a2a;
@@ -56,4 +61,11 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
+}
+
+.logo {
+  margin-top: 40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
 }

@@ -3,8 +3,10 @@ import "./styles.css";
 
 export default function HowItWorks() {
   return (
-    <div>
-      <p className="title">How it Works</p>
+    <div id="howToContent">
+      <div className="top">
+        <p className="title">How it Works</p>
+      </div>
     </div>
   );
 }
