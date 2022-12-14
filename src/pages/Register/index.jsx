@@ -1,6 +1,8 @@
-import { React, useState } from "react";
-import "./styles.css";
+import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { mutate } from "swr";
+// import fetcher from "../../utils/fetcher";
+import "./styles.css";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -8,6 +10,41 @@ export default function Register() {
   const [number, setNumber] = useState();
   const [address, setAddress] = useState("");
   const [password, setPassword] = useState("");
+
+  const [users, setUsers] = useState();
+
+  useEffect(() => {
+    fetch("/api/user")
+      .then((response) => response.json())
+      .then((user_data) => setUsers(user_data.users));
+    // var responseClone;
+    // fetch("/")
+    //   .then(function (response) {
+    //     responseClone = response.clone();
+    //     return response.json();
+    //   })
+    //   .then(
+    //     function (data) {
+    //       setUsers(data.users);
+    //     },
+    //     function (rejectionReason) {
+    //       console.log(
+    //         "Error parsing JSON from response:",
+    //         rejectionReason,
+    //         responseClone
+    //       );
+    //       responseClone
+    //         .text()
+    //         .then(function (bodyText) {
+    //           console.log(
+    //             "Received the following instead of valid JSON:",
+    //             bodyText
+    //           );
+    //         });
+    //     }
+    //   );
+  }, []);
+  console.log(users);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,6 +54,43 @@ export default function Register() {
       number,
       address,
       password,
+    });
+
+    // fetch("http://localhost:3000/register", {
+    //   method: "POST",
+    //   crossDomain: true,
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Accept: "application/json",
+    //     "Access-Control-Allow-Origin": "*",
+    //   },
+    //   body: JSON.stringify({
+    //     name,
+    //     email,
+    //     number,
+    //     address,
+    //     password,
+    //   }),
+    // })
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     console.log(data, "userRegister");
+    //   });
+
+    mutate("/api/user", async () => {
+      const registeredUser = fetch("/api/user", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          number,
+          address,
+          password,
+        }),
+      });
+
+      console.log(registeredUser);
     });
   };
 
