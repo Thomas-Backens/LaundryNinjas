@@ -15,7 +15,7 @@ export default function Register() {
   };
 
   return (
-    <div id="registerRoot">
+    <div className="reglogRoot">
       <div className="container">
         <div className="top">
           <h1>Login</h1>

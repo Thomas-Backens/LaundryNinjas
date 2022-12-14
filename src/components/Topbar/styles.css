@@ -1,12 +1,26 @@
 .root {
   position: relative;
-  background-color: white; /* theme.palette.surface.white, */
-  width: "100%";
-  height: 150px;
+}
+.fixed {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 160px;
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+#logoSection {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-top: 40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
 }
 .link {
   text-decoration: none;
@@ -14,6 +28,7 @@
 .name {
   text-align: center;
 }
+
 #title {
   height: 20px;
   color: black; /* theme.palette.surface.black; */
@@ -26,6 +41,7 @@
   font-weight: 700;
   text-align: "center";
 }
+
 .buttons {
   display: flex;
 }
@@ -61,11 +77,4 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-}
-
-.logo {
-  margin-top: 40px;
-  width: 200px;
-  height: 200px;
-  border-radius: 8px;
 }

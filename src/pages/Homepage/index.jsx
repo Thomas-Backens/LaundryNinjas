@@ -20,7 +20,6 @@ export default function Homepage() {
               Set your bag(s) of laundry outside your front door. I will pick it
               up, sort, wash, dry, fold, and deliver the next business day.
             </p>
-            <button className="contentBtn">BOOK ONLINE</button>
           </div>
         </div>
         <div className="section">

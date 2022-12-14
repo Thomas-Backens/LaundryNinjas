@@ -8,14 +8,8 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 
 function App() {
-  // const location = useLocation();
   return (
     <>
-      {/* {location.pathname !== "/register" && location.pathname !== "/login" ? (
-        <Topbar />
-      ) : (
-        ""
-      )} */}
       <Topbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
