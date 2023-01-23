@@ -1,4 +1,196 @@
-@import url("https://fonts.googleapis.com/css?family=Homenaje&display=swap");
+#homeRoot {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+#header {
+  position: relative;
+  display: flex;
+  height: 700px;
+  padding: 100px 0px;
+}
+#header > img {
+  position: absolute;
+  width: 60%;
+  height: 700px;
+  right: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+#header > div {
+  display: flex;
+  align-items: center;
+}
+#headerContent {
+  background-color: #0c0c0c;
+  margin-left: 200px;
+  padding-top: 50px;
+  width: 50%;
+  height: 400px;
+}
+#headerContent > h1 {
+  color: white;
+  font-family: "DM Sans";
+  font-size: 64px;
+  font-weight: 600;
+}
+
+#services {
+  position: relative;
+  display: flex;
+  gap: 100px;
+  background-color: #121212;
+  height: 400px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#services > h2 {
+  position: absolute;
+  top: -120px;
+  right: -30px;
+  color: #0c0c0c79;
+  font-size: 160px;
+  font-family: "DM Sans";
+  font-weight: 600;
+  z-index: 1;
+}
+
+#topicHeader {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
+}
+#topicHeader > h6 {
+  font-size: 56px;
+  margin: 0px;
+  font-weight: 600;
+  font-family: "DM Sans";
+  color: white;
+  z-index: 2;
+}
+#topicHeader > p,
+.topic > p {
+  font-size: 16px;
+  font-family: "DM Sans";
+  color: white;
+  z-index: 2;
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 25%;
+}
+.topic > h6 {
+  margin: 0px;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "DM Sans";
+  color: white;
+}
+
+#about {
+  position: relative;
+  display: flex;
+  gap: 50px;
+  padding: 100px 100px 100px 50px;
+}
+#about > h2 {
+  position: absolute;
+  top: 110px;
+  left: -30px;
+  color: rgba(255, 255, 255, 2%);
+  font-size: 160px;
+  font-family: "DM Sans";
+  font-weight: 600;
+  z-index: 1;
+}
+
+#aboutContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+#aboutContent > h2,
+#enjoyContent > h2 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 56px;
+  font-weight: 600;
+  font-family: "DM Sans";
+  line-height: 120%;
+  color: white;
+}
+#aboutContent > p,
+#enjoyContent > p {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family: "DM Sans";
+  line-height: 150%;
+  color: white;
+}
+
+#aboutmeTag {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "DM Sans";
+  color: white;
+}
+#aboutmeTag::before {
+  content: "";
+  display: block;
+  width: 20px;
+  border-bottom: 2px solid #88f3ea;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+#aboutImg,
+#enjoyImg {
+  position: relative;
+}
+#aboutImg > img {
+  top: 20px;
+  left: 20px;
+  width: 600px;
+  height: 640px;
+  object-fit: cover;
+}
+
+#maskImg {
+  position: absolute;
+  z-index: -1;
+}
+
+#enjoy {
+  position: relative;
+  display: flex;
+  gap: 100px;
+  padding: 100px;
+}
+
+#enjoyImg > img {
+  top: 20px;
+  left: -20px;
+  width: 600px;
+  height: 640px;
+  object-fit: cover;
+}
+
+/* @import url("https://fonts.googleapis.com/css?family=Homenaje&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
 
 #content {
@@ -48,12 +240,17 @@ h6 {
   width: 1200px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 75px;
 }
-.section img,
-.section .info {
+.section img {
   width: 575px;
   height: 300px;
+  text-align: left;
+}
+.section .info {
+  width: 575px;
+  height: 400px;
   text-align: left;
 }
 .section img {
@@ -61,7 +258,8 @@ h6 {
 }
 
 .info h6 {
-  height: 10px;
+  height: 20px;
+  line-height: 35px;
 }
 .info p {
   font-family: "Inter";
@@ -69,4 +267,4 @@ h6 {
   color: #8d8682;
   height: 80px;
   line-height: 34px;
-}
+} */

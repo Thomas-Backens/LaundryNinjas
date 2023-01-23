@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+
 #howToContent {
   display: flex;
   flex-direction: column;
@@ -5,14 +7,40 @@
   text-align: center;
   padding-top: 250px;
 }
-
-#howToContent > .top {
-  background-color: red;
-  text-align: center;
-  width: 200px;
-  height: 200px;
+#howToContent > div {
+  text-align: left;
+  width: 1000px;
 }
 
-.title {
-  color: black;
+#howToContent > div > p {
+  color: #8d8682;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+}
+#howToContent > div > h2 {
+  color: #4a4644;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 30px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#steps {
+  list-style: none;
+}
+#steps > li {
+  color: #4a4644;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#simple {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+#rate {
+  margin-bottom: 100px;
 }

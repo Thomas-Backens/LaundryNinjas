@@ -11,12 +11,12 @@ export default function Register() {
   const [address, setAddress] = useState("");
   const [password, setPassword] = useState("");
 
-  const [users, setUsers] = useState();
+  // const [users, setUsers] = useState();
 
   useEffect(() => {
     fetch("/api/user")
       .then((response) => response.json())
-      .then((user_data) => setUsers(user_data.users));
+      .then((user_data) => console.log(user_data));
     // var responseClone;
     // fetch("/")
     //   .then(function (response) {
@@ -25,7 +25,7 @@ export default function Register() {
     //   })
     //   .then(
     //     function (data) {
-    //       setUsers(data.users);
+    //       console.log(data);
     //     },
     //     function (rejectionReason) {
     //       console.log(
@@ -44,7 +44,7 @@ export default function Register() {
     //     }
     //   );
   }, []);
-  console.log(users);
+  // console.log(users);
 
   const handleSubmit = (e) => {
     e.preventDefault();

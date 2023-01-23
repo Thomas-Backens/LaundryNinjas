@@ -37,7 +37,7 @@ const uri =
 //   }
 // });
 
-// app.listen(5000, () => {
+// app.listen(3000, () => {
 //   console.log("Server Started");
 // });
 
@@ -48,18 +48,22 @@ const getAllUsers = async () => {
   try {
     await client.connect();
 
-    result = client
+    const cursor = client
       .db("AllUsers")
       .collection("Users")
       .findOne({ name: "John Doe" });
-    console.log("???");
+
+    result = await cursor;
   } catch (e) {
     console.error(e);
   } finally {
     await client.close();
   }
+  console.log(result);
   return result;
 };
+
+// getAllUsers().catch(console.error);
 
 const registerUser = async (newUser) => {
   const client = new MongoClient(uri);
