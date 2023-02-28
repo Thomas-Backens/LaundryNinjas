@@ -12,11 +12,11 @@ export default function Register() {
   const [servSpeed, setServSpeed] = useState("Regular");
   const [numOfBags, setNumOfBags] = useState("");
   const [detPref, setDetPref] = useState("None");
-  const [bleach, setBleach] = useState("Not use Bleach");
-  const [cbleach, setCbleach] = useState("Not use Colored Bleach");
-  const [sInstructions, setSInstructions] = useState("Nope");
+  const [bleach, setBleach] = useState("NOT use Bleach");
+  const [cbleach, setCbleach] = useState("NOT use Colored Bleach");
+  const [sInstructions, setSInstructions] = useState("NONE");
   const [fold, setFold] = useState("Do not Fold");
-  const [hang, setHang] = useState("Do not Hang");
+  const [hang, setHang] = useState("do not Hang");
 
   const rootForm = useRef(null);
 
