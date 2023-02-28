@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <SWRConfig value={{ refreshInterval: 5000, fetcher }}>
-      <Router basename="/">
+      <Router>
         <ScrollToTop />
         <App />
       </Router>
