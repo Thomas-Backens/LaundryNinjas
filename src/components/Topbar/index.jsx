@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 export default function Topbar() {
   const location = useLocation();
@@ -19,26 +19,30 @@ export default function Topbar() {
           </div>
         </div>
         <div className="navButtons">
-          {/* <Link to="/"> */}
-          <button
-            class={`nofillBtn ${location.pathname === "/" && "btnActive"}`}
-          >
-            Home
-          </button>
-          {/* </Link> */}
-          {/* <Link to="/how"> */}
-          <button
-            class={`nofillBtn ${location.pathname === "/how" && "btnActive"}`}
-          >
-            How it works
-          </button>
-          {/* </Link> */}
-          {/* <Link to="/schedule"> */}
-          <button class="fillBtn">
-            Schedule pickup
-            <img className="btnArrow" src="/right-arrow.png" alt="arrow" />
-          </button>
-          {/* </Link> */}
+          <Link to="/">
+            <button
+              className={`nofillBtn ${
+                location.pathname === "/" && "btnActive"
+              }`}
+            >
+              Home
+            </button>
+          </Link>
+          <Link to="/how">
+            <button
+              className={`nofillBtn ${
+                location.pathname === "/how" && "btnActive"
+              }`}
+            >
+              How it works
+            </button>
+          </Link>
+          <Link to="/schedule">
+            <button className="fillBtn">
+              Schedule pickup
+              <img className="btnArrow" src="/right-arrow.png" alt="arrow" />
+            </button>
+          </Link>
         </div>
       </div>
     </div>

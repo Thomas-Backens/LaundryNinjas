@@ -1,22 +1,22 @@
 const { MongoClient } = require("mongodb");
-// const express = require("express");
-// const app = express();
-// const mongoose = require("mongoose");
-// app.use(express.json());
-// const cors = require("cors");
-// app.use(cors());
+const express = require("express");
+const app = express();
+const mongoose = require("mongoose");
+app.use(express.json());
+const cors = require("cors");
+app.use(cors());
 
 const uri =
   "mongodb+srv://laundryninjas:Moneymaker2022@maincluster.ymjwmza.mongodb.net/?retryWrites=true&w=majority";
 
-// mongoose
-//   .connect(uri, {
-//     useNewUrlParser: true,
-//   })
-//   .then(() => {
-//     console.log("Connected to database");
-//   })
-//   .catch((e) => console.log(e));
+mongoose
+  .connect(uri, {
+    useNewUrlParser: true,
+  })
+  .then(() => {
+    console.log("Connected to database");
+  })
+  .catch((e) => console.log(e));
 
 // require("./userDetails");
 // const User = mongoose.model("UserInfo");
@@ -37,9 +37,32 @@ const uri =
 //   }
 // });
 
-// app.listen(3000, () => {
-//   console.log("Server Started");
-// });
+const database = {
+  users: [
+    {
+      id: "123",
+      name: "John",
+      email: "john@gmail.com",
+      password: "cookies",
+      entries: 0,
+    },
+    {
+      id: "124",
+      name: "Tom",
+      email: "Tom@gmail.com",
+      password: "apple",
+      entries: 0,
+    },
+  ],
+};
+
+app.get("/", (req, res) => {
+  res.send(database.users);
+});
+
+app.listen(3002, () => {
+  console.log("Server Started");
+});
 
 const getAllUsers = async () => {
   const client = new MongoClient(uri);

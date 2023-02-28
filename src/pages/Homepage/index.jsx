@@ -3,6 +3,36 @@ import "./styles.css";
 // import { Link } from "react-router-dom";
 
 export default function Homepage() {
+  // useEffect(() => {
+  //   fetch("http://localhost:3002")
+  //     .then((response) => response.json())
+  //     .then((user_data) => console.log(user_data));
+  // var responseClone;
+  // fetch("api/user.js")
+  //   .then(function (response) {
+  //     responseClone = response.clone();
+  //     return response.json();
+  //   })
+  //   .then(
+  //     function (data) {
+  //       console.log(data);
+  //     },
+  //     function (rejectionReason) {
+  //       console.log(
+  //         "Error parsing JSON from response:",
+  //         rejectionReason,
+  //         responseClone
+  //       );
+  //       responseClone.text().then(function (bodyText) {
+  //         console.log(
+  //           "Received the following instead of valid JSON:",
+  //           bodyText
+  //         );
+  //       });
+  //     }
+  //   );
+  //}, []);
+
   return (
     <div
       id="homeRoot"
@@ -31,22 +61,22 @@ export default function Homepage() {
             <div id="headerBorder" />
             <p id="headerTag">ALL-IN-ONE LAUNDRY SERVICE</p>
             <h1>Local family owned and operated laundry service</h1>
-            <button class="fillBtn">
+            <button className="fillBtn" id="headerBtn">
               Schedule pickup
               <img className="btnArrow" src="/right-arrow.png" alt="arrow" />
             </button>
           </div>
         </div>
         <div id="subheaders">
-          <p class="subheader">
+          <p className="subheader">
             <img src="/checkmark.png" alt="checkmark" />
             Stay in the comfort of your home
           </p>
-          <p class="subheader">
+          <p className="subheader">
             <img src="/checkmark.png" alt="checkmark" />
             Easy schedule & pickup
           </p>
-          <p class="subheader">
+          <p className="subheader">
             <img src="/checkmark.png" alt="checkmark" />
             Get caught up on your life
           </p>
@@ -54,16 +84,16 @@ export default function Homepage() {
       </div>
       <div id="services">
         <h2>SERVICES</h2>
-        <div class="topic">
-          <div class="topicLine" />
+        <div className="topic">
+          <div className="topicLine" />
           <h6>Full Laundry Service</h6>
           <p>
             (sort, wash, dry, & fold) laundry with pick up and delivery
             included. (Items may be hung on hangers, upon request.)
           </p>
         </div>
-        <div class="topic">
-          <div class="topicLine" />
+        <div className="topic">
+          <div className="topicLine" />
           <h6>Never leave your home</h6>
           <p>
             Place your order and let all your worries disappear! I'll pickup
@@ -113,7 +143,7 @@ export default function Homepage() {
             required. You can use my services for weekly reoccurring laundry, or
             simply a one-time catch-up.
           </p>
-          <button class="fillBtn">
+          <button className="fillBtn">
             Schedule pickup
             <img className="btnArrow" src="/right-arrow.png" alt="arrow" />
           </button>
@@ -121,34 +151,4 @@ export default function Homepage() {
       </div>
     </div>
   );
-
-  // useEffect(() => {
-  // fetch("api/users.js")
-  //   .then((response) => response.json())
-  //   .then((user_data) => console.log(user_data.data));
-  // var responseClone;
-  // fetch("api/user.js")
-  //   .then(function (response) {
-  //     responseClone = response.clone();
-  //     return response.json();
-  //   })
-  //   .then(
-  //     function (data) {
-  //       console.log(data);
-  //     },
-  //     function (rejectionReason) {
-  //       console.log(
-  //         "Error parsing JSON from response:",
-  //         rejectionReason,
-  //         responseClone
-  //       );
-  //       responseClone.text().then(function (bodyText) {
-  //         console.log(
-  //           "Received the following instead of valid JSON:",
-  //           bodyText
-  //         );
-  //       });
-  //     }
-  //   );
-  // }, []);
 }

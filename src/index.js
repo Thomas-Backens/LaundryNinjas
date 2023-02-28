@@ -5,12 +5,14 @@ import { BrowserRouter as Router } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import { SWRConfig } from "swr";
 import fetcher from "./utils/fetcher";
+import ScrollToTop from "./utils/ScrollToTop";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <SWRConfig value={{ refreshInterval: 5000, fetcher }}>
       <Router>
+        <ScrollToTop />
         <App />
       </Router>
     </SWRConfig>

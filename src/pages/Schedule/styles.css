@@ -1,6 +1,313 @@
 @import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
 
+h2 {
+  color: var(--white-theme);
+}
+p,
+label {
+  color: var(--white-theme);
+  font-size: 16px;
+}
+
 .scheduleRoot {
+  --white-theme: #fbfbfb;
+  --grey-theme: #1a1a1a;
+  --dark-theme: #121212;
+  --main-theme: #88f3ea;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  padding-top: 150px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.container > .top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.container > .top > h1 {
+  color: var(--white-theme);
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: bold;
+  height: 20px;
+}
+.container > .top > h5 {
+  color: var(--white-theme);
+  font-family: "Inter";
+  font-size: 16px;
+}
+
+#rootForm {
+  background-color: var(--grey-theme);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  padding-top: 10px;
+}
+#rootForm > * {
+  border-bottom: 2px solid var(--main-theme);
+  margin-bottom: 10px;
+}
+#rootForm > div:last-child {
+  margin-bottom: 0px;
+  border: none;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.section {
+  background-color: var(--grey-theme);
+  height: 75px;
+  padding: 0 10px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.section[data-open="true"][data-size="1"] {
+  height: 160px;
+}
+.section[data-open="true"][data-size="2"] {
+  height: 275px;
+}
+.section[data-open="true"][data-size="3"] {
+  height: 400px;
+}
+.section[data-open="false"]:hover {
+  cursor: pointer;
+}
+
+#mustOrder {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.pricings {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.pricing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  font-size: 14px;
+  color: var(--white-theme);
+  z-index: -1;
+  transition: all 0.3s;
+}
+.pricing#left {
+  transform: translate(-165%, -50%);
+}
+.pricing#right {
+  transform: translate(65%, -50%);
+}
+.pricing#toolate {
+  transform: translate(150%, -50%);
+}
+.pricing.checked {
+  top: -50%;
+}
+.service-buttons > button:last-child:hover .pricing#right,
+.service-buttons > button:last-child:hover .pricing#toolate,
+.service-buttons > button:first-child:hover .pricing#left {
+  top: -50%;
+}
+
+.service-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.service-buttons > button:first-child {
+  border-radius: 8px 0px 0px 8px;
+}
+.service-buttons > button:last-child {
+  border-radius: 0px 8px 8px 0px;
+}
+.service-buttons > button {
+  background-color: var(--dark-theme);
+  color: var(--white-theme);
+  font-size: 16px;
+  border: none;
+  width: 200px;
+  height: 40px;
+  transition: color 0.1s;
+  cursor: pointer;
+}
+.service-buttons > button:hover {
+  color: var(--main-theme);
+  border: 2px solid var(--main-theme);
+}
+
+#service-selecter {
+  position: absolute;
+  background-color: var(--main-theme);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 40px;
+  transition: all 0.5s;
+}
+#service-selecter[data-servside="left"] {
+  transform: translate(-100%, -50%);
+  border-radius: 8px 0px 0px 8px;
+}
+#service-selecter[data-servside="right"] {
+  transform: translate(0%, -50%);
+  border-radius: 0px 8px 8px 0px;
+}
+
+.service-text {
+  position: relative;
+  pointer-events: none;
+  transition: all 0.3s;
+  z-index: 10;
+}
+.service-text.selected {
+  color: var(--dark-theme);
+}
+
+#bags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+#bagButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#bagButtons > button {
+  background-color: var(--grey-theme);
+  color: var(--white-theme);
+  border-radius: 50%;
+  border: 1px solid var(--main-theme);
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+#bagButtons > button:hover {
+  border: 2px solid var(--main-theme);
+}
+#bagButtons > button:active {
+  background-color: var(--main-theme);
+  color: var(--dark-theme);
+}
+
+.input-horiz {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.input-vert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-checks {
+  display: flex;
+  flex-direction: column;
+  padding: 1px 20px 0px 20px;
+  /* padding-top: 20px;
+  padding-left: 20px; */
+  text-align: left;
+}
+
+.input-text {
+  background-color: var(--dark-theme);
+  color: var(--white-theme);
+  width: 200px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.1s;
+}
+.input-text:focus {
+  outline: none;
+}
+
+.input-textbox {
+  background-color: var(--dark-theme);
+  color: var(--white-theme);
+  width: fit-content;
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  resize: none;
+  transition: all 0.1s;
+}
+.input-textbox:focus {
+  outline: none;
+  border-bottom: 2px solid var(--main-theme);
+  border-radius: 8px 8px 0px 0px;
+}
+
+.input-checkbox {
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+  background-color: var(--grey-theme);
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid var(--main-theme);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.input-checkbox:checked {
+  background-color: var(--main-theme);
+}
+
+.input-number {
+  background-color: var(--dark-theme);
+  color: var(--main-theme);
+  width: 40px;
+  height: 25px;
+  margin-bottom: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.1s;
+}
+.input-number:focus {
+  outline: none;
+}
+
+#submitButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+/* .scheduleRoot {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,4 +395,4 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-}
+} */
